@@ -1,0 +1,26 @@
+package com.example.provaandr;
+
+
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
+
+public class MainSecundaria extends AppCompatActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState){
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_secundaria);
+    }
+
+
+
+
+
+
+    public void conta(View View){
+        Button b = (Button) View;
+        b.getText();
+        salvo = (String) b.getText();
+    }
+}

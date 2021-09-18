@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/botaoac"
+        android:layout_width="80dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="120dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="AC"
+        android:onClick="conta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/botao0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botao7" />
+
+    <Button
+        android:id="@+id/botaodividir"
+        android:layout_width="80dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="120dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="/"
+        android:onClick="conta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/botaoigual"
+        app:layout_constraintTop_toBottomOf="@+id/botaovezes" />
+
+    <Button
+        android:id="@+id/botao0"
+        android:layout_width="80dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="120dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="0"
+        android:onClick="conta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/botaoigual"
+        app:layout_constraintStart_toEndOf="@+id/botaoac"
+        app:layout_constraintTop_toBottomOf="@+id/botao8" />
+
+    <Button
+        android:id="@+id/botaoigual"
+        android:layout_width="80dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="120dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="="
+        android:onClick="conta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/botaodividir"
+        app:layout_constraintStart_toEndOf="@+id/botao0"
+        app:layout_constraintTop_toBottomOf="@+id/botao9" />
+
+    <Button
+        android:id="@+id/botao7"
+        android:layout_width="80dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="7"
+        android:onClick="conta"
+        app:layout_constraintBottom_toTopOf="@+id/botaoac"
+        app:layout_constraintEnd_toStartOf="@+id/botao8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botao4" />
+
+    <Button
+        android:id="@+id/botaovezes"
+        android:layout_width="80dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="*"
+        android:onClick="conta"
+        app:layout_constraintBottom_toTopOf="@+id/botaodividir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/botao9"
+        app:layout_constraintTop_toBottomOf="@+id/botaomenos" />
+
+    <Button
+        android:id="@+id/botao8"
+        android:layout_width="80dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="8"
+        android:onClick="conta"
+        app:layout_constraintBottom_toTopOf="@+id/botao0"
+        app:layout_constraintEnd_toStartOf="@+id/botao9"
+        app:layout_constraintStart_toEndOf="@+id/botao7"
+        app:layout_constraintTop_toBottomOf="@+id/botao5" />
+
+    <Button
+        android:id="@+id/botao9"
+        android:layout_width="80dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="9"
+        android:onClick="conta"
+        app:layout_constraintBottom_toTopOf="@+id/botaoigual"
+        app:layout_constraintEnd_toStartOf="@+id/botaovezes"
+        app:layout_constraintStart_toEndOf="@+id/botao8"
+        app:layout_constraintTop_toBottomOf="@+id/botao6" />
+
+    <Button
+        android:id="@+id/botao4"
+        android:layout_width="80dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="4"
+        android:onClick="conta"
+        app:layout_constraintBottom_toTopOf="@+id/botao7"
+        app:layout_constraintEnd_toStartOf="@+id/botao5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botao1" />
+
+    <Button
+        android:id="@+id/botaomenos"
+        android:layout_width="80dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="-"
+        android:onClick="conta"
+        app:layout_constraintBottom_toTopOf="@+id/botaovezes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/botao6"
+        app:layout_constraintTop_toBottomOf="@+id/botaomais" />
+
+    <Button
+        android:id="@+id/botao5"
+        android:layout_width="80dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="5"
+        android:onClick="conta"
+        app:layout_constraintBottom_toTopOf="@+id/botao8"
+        app:layout_constraintEnd_toStartOf="@+id/botao6"
+        app:layout_constraintStart_toEndOf="@+id/botao4"
+        app:layout_constraintTop_toBottomOf="@+id/botao2" />
+
+    <Button
+        android:id="@+id/botao6"
+        android:layout_width="80dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="6"
+        android:onClick="conta"
+        app:layout_constraintBottom_toTopOf="@+id/botao9"
+        app:layout_constraintEnd_toStartOf="@+id/botaomenos"
+        app:layout_constraintStart_toEndOf="@+id/botao5"
+        app:layout_constraintTop_toBottomOf="@+id/botao3" />
+
+    <Button
+        android:id="@+id/botaomais"
+        android:layout_width="80dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:text="+"
+        android:onClick="conta"
+        app:layout_constraintBottom_toTopOf="@+id/botaomenos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/botao3"
+        app:layout_constraintTop_toBottomOf="@+id/vertexto" />
+
+    <Button
+        android:id="@+id/botao3"
+        android:layout_width="80dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:text="3"
+        android:onClick="conta"
+        app:layout_constraintBottom_toTopOf="@+id/botao6"
+        app:layout_constraintEnd_toStartOf="@+id/botaomais"
+        app:layout_constraintStart_toEndOf="@+id/botao2"
+        app:layout_constraintTop_toBottomOf="@+id/vertexto" />
+
+    <Button
+        android:id="@+id/botao2"
+        android:layout_width="80dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:text="2"
+        android:onClick="conta"
+        app:layout_constraintBottom_toTopOf="@+id/botao5"
+        app:layout_constraintEnd_toStartOf="@+id/botao3"
+        app:layout_constraintStart_toEndOf="@+id/botao1"
+        app:layout_constraintTop_toBottomOf="@+id/vertexto" />
+
+    <Button
+        android:id="@+id/historico"
+        android:layout_width="117dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="29dp"
+        android:layout_marginEnd="265dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="19dp"
+        android:text="Histórico"
+        app:layout_constraintBottom_toTopOf="@+id/vertexto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/botao1"
+        android:layout_width="80dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="1"
+        android:onClick="conta"
+        app:layout_constraintBottom_toTopOf="@+id/botao4"
+        app:layout_constraintEnd_toStartOf="@+id/botao2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vertexto" />
+
+    <TextView
+        android:id="@+id/vertexto"
+        android:layout_width="362dp"
+        android:layout_height="137dp"
+        android:layout_marginBottom="36dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="1dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/botao1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/historico" />
+
+</android.support.constraint.ConstraintLayout>
